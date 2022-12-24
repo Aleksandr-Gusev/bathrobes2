@@ -1,0 +1,37 @@
+.form1{
+    background: url("../img/main2.jpg") center no-repeat;
+    margin: -8px -8px 0 -8px;
+    background-size: cover;
+    height: 450px;
+    padding: 50px 0;
+}
+.form1_text1{
+    color:#fff;
+    font-size: 22px;
+    font-weight: 700;
+}
+.form1_text2{
+    color:#fff;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 20px;
+    margin-top: 40px;
+}
+.form1_st{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+}
+.form1_st input{
+            height: 50px;
+            background-color:#fff;
+            color:#4b4b4b;
+            margin-bottom: 15px;
+            border-radius: 5px;
+            padding: 0 20px;
+            font-size: 14px;
+            font-weight: 300;
+            border: none;
+            
+}

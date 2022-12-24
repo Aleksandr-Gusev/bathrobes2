@@ -1,0 +1,25 @@
+@import url("/css/header.css");
+@import url("/css/wrapper.css");
+@import url("/css/advan.css");
+@import url("/css/form.css");
+
+*{
+    font-family: 'Roboto', sans-serif;
+  }
+
+@media (max-width: 425px){
+    .wrapper_icons{
+        width: 300px;
+    }
+    .advan_text1{
+        font-size: 12px;
+        font-weight: 700;
+    }
+    .advan_text2{
+        font-size: 12px;
+        font-weight: 300;
+        margin-top: 10px;
+    }
+        
+    
+}
