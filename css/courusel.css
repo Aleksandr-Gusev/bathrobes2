@@ -1,0 +1,18 @@
+.carousel {
+    display: block;
+    margin: 0 auto;
+    padding: 10px;
+    max-width: 300px;
+}
+
+.carousel-item img{
+    display: block;
+    margin: 0 auto;
+    height: 300px;
+    padding: 10px;
+} 
+
+.carousel-control-prev-icon, .carousel-control-next-icon {
+    background-color:#c70101;
+}
+
