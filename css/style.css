@@ -20,7 +20,7 @@
     
 }
 
-@media (max-width: 425px){
+@media (max-width: 426px){
     .wrapper_icons{
         width: 300px;
     }
@@ -33,6 +33,11 @@
         font-weight: 300;
         margin-top: 10px;
     }
-        
+    .content{
+        justify-content: center;
+    }
+    .tab{
+        font-size: 10px;
+    }
     
 }
