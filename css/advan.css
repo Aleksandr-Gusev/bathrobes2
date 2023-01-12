@@ -33,3 +33,13 @@
     font-weight: 300;
     margin-top: 10px;
 }
+.animation_heart{
+    animation: move1 1s infinite;
+    animation-direction: alternate; 
+    
+}
+
+@keyframes move1 {
+    from { transform: scale(0.9); }
+    to { transform: scale(1.2); }
+   }
