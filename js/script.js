@@ -19,17 +19,23 @@ $(document).ready(function(){
     toggleSlide('.catalog-link');
     toggleSlide('.catalog_back');
     
-        /* $('.catalog_link').each(function(i) {
-            $(this).on('click', function(e) {
-                e.preventDefault();
-                $('.block1').toggleClass('active2');
-                $('.block2').eq(i).toggleClass('active3');
-            })
-        }); */
-    
+    //modal
+    $('[data-modal="consultation"]').on('click', function(){
+        $('.overlay, #consultation').fadeIn('slow');
+    });
+    $('.modal_close').on('click', function(){
+        $('.overlay, #consultation, #order, #accept').fadeOut('slow');
+    });
 
-    /* toggleSlide('.catalog_link');
-    toggleSlide('.catalog_back'); */
+    $('.btn-mini').on('click', function(){
+        $('.overlay, #order').fadeIn('slow');
+    });
+
+    $('.btn-mini').each(function(i){
+        $(this).on('click', function(){
+            $('#order .modal_descr').text($('.catalog-descr1').eq(i).text());
+        })
+    });
 
 });
 
