@@ -9,11 +9,11 @@
 .mod{
     position: absolute;
     top: 50%;
-    left: 48%;
+    left: 50%;
     transform: translate(-50%, -50%);
     background-color: #f2f2f2;
-    width: 310px;
-    min-height: 400px;
+    width: 340px;
+    min-height: 450px;
 }
 
 
@@ -50,4 +50,26 @@
 
 #consultation, #order, #accept{
     display: none;
+    
+}
+
+.input_border{
+    border:none;
+    outline: 0;
+}
+
+.error{
+    
+    border:1px solid #c70101;
+}
+label.error{
+    border: none;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 300;
+    color: #d45858;
+    line-height: 5px;
+    margin-bottom: 5px;
+    padding-bottom: 5px;
+
 }

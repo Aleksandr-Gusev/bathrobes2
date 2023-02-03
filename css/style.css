@@ -47,11 +47,11 @@
     .modal_close{
         right: 0;
         top: 5px;
-    
         height: 30px;
         width: 30px;
         text-align: center;
-        
-
+    }
+    .mod{
+        width: 310px;
     }
 }

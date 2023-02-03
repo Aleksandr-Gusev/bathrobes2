@@ -32,6 +32,10 @@
             padding: 0 20px;
             font-size: 14px;
             font-weight: 300;
-            border: none;
+            /* border: hidden;  */
             
+}
+
+.error{
+    border: 2px solid #c70101;
 }

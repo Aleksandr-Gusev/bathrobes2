@@ -37,6 +37,58 @@ $(document).ready(function(){
         })
     });
 
-});
+//https://jqueryvalidation.org/
 
+function validateForm(form){
+    $(form).validate({
+        rules: {
+            name: { required: true,
+                    minlength: 2
+                },
+            phone: "required",
+            email: {
+                required: true,
+                email: true
+            }
+        },
+        messages: {
+            name: {
+                required:"Пожалуйста, введите свое имя",
+                minlength: jQuery.validator.format("Введите не менее {0} - х символов")
+            },
+            phone: "Пожалуйста, введите свой номер телефона",
+            email: {
+                required: "Пожалуйста, введите свою электронную почту",
+                email: "Неправильно введен адрес почты"
+            }
+        }
+    });
+}
+
+validateForm('#consultation form');
+validateForm('#order form');
+validateForm('#form1');
+
+$('input[name=phone]').mask("+7 (999) 999-99-99");
+
+
+//*******************************Отправка на почту +  ********************************/
+
+$('form').submit(function(e){
+    e.preventDefault();             //отмена перезагрузки страницы при нажатии на кнопку отправки
+    $.ajax({
+        type: "POST",
+        url: "mailer/smart.php",    // обработчик
+        data: $(this).serialize()    //подготовка данных перед отправкой
+    }).done(function(){             // когда выполнили операцию то делаем следующую
+        $(this).find("input").val(""); //очистка инпутов после отправки
+        $('#consultation, #order').fadeOut(); // скрытие форм
+        $('.overlay, #accept').fadeIn('slow'); // вывод формы с сообщением
+        $('form').trigger('reset');     // очистка форм     
+    });      
+    return false;                    
+}); 
+
+});
+ 
  
