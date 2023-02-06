@@ -89,6 +89,16 @@ $('form').submit(function(e){
     return false;                    
 }); 
 
+
+//**********************************scroll********************* */
+
+$(window).scroll(function(){
+    if($(this).scrollTop() > 500){
+        $('.up').fadeIn();
+    } else {
+        $('.up').fadeOut();
+    }
+});
 });
  
  
