@@ -1,10 +1,10 @@
-@import url("../css/header.css");
-@import url("../css/wrapper.css");
-@import url("../css/advan.css");
-@import url("../css/form.css");
-@import url("../css/courusel.css");
-@import url("../css/catalog.css");
-@import url("../css/modal.css");
+@import url("./css/header.css");
+@import url("./css/wrapper.css");
+@import url("./css/advan.css");
+@import url("./css/form.css");
+@import url("./css/courusel.css");
+@import url("./css/catalog.css");
+@import url("./css/modal.css");
 
 *{
     font-family: 'Roboto', sans-serif;
